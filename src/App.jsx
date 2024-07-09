@@ -19,7 +19,6 @@ const App = () => {
     const updatedItems = [...items];
     updatedItems.splice(indexToRemove, 1);
     setItems(updatedItems); 
-    console.log(updatedItems)
   };
 
   return (
