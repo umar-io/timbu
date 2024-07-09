@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  margin: 0px auto;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 40px;
+  border-bottom: 1px solid #eaecf0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+header .top-nav {
+  position: relative;
+  margin-top: 20px;
+}
+
+header .top-nav h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header .top-nav span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+header .search-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 30px;
+}
+
+.search-area img {
+  transition: 0.5s ease-in-out;
+}
+
+.search-area .input-group {
+  position: relative;
+}
+
+.input-group input {
+  height: 43px;
+  width: 600px;
+  padding-left: 40px;
+  background-color: #f2f4f7;
+  outline: none;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.input-group img {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  padding-left: 10px;
+}
+
+.search-area span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+ul > li {
+  background-color: #f2f4f7;
+  width: 150px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 5px;
+  position: relative;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+li > a {
+  color: #757575;
+}
+
+img.checker {
+  width: 15px;
+}
+
+.active {
+  background-color: #757575;
+  color: #fff;
+}
+
+.active a {
+  color: #fff;
+}
+
+aside.menubar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 240px;
+  height: fit-content;
+  background-color: #f5f5f5;
+  position: absolute;
+  right: 40px;
+  top: 70px;
+  border-radius: 5px;
+  border: 1px solid #eaecf0;
+  opacity: 0;
+}
+
+.profileinfo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eaecf0;
+  padding: 20px;
+}
+
+.activity {
+  background-color: #12b76a;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30%;
+  left: 50px;
+}
+
+.fulls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fulls > h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.fulls > p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+ul.menuLink {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+ul.menuLink > li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+ul.menuLink > li:hover {
+  gap: 15px;
+  background-color: #eaecf0;
+}
+
+ul.menuLink > li:hover span > img {
+  transform: scale(1.1);
+}
+
+ul.menuLink > li:hover p {
+  transform: scale(1.1);
+}
+
+ul.menuLink > li > p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 240px;
+}
+
+main .filterSystem{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.filterButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  color: #000;
+  background-color: #F9FAFB;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.filter{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+}
+
+.filter ul {
+  gap: 25px;
+}
+
+.filter ul li{
+  width: fit-content;
+  padding: 5px;
+  color:#000;
+  gap: 10px;
+}
+
+.filter ul li span img{
+    width: 20px;
+}
+
+.collapseImg{
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+
+/* utility */
+.show{
+  opacity: 1 !important;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
