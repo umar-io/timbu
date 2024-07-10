@@ -1,4 +1,4 @@
-import { FilterButton, filterItems, times } from ".";
+import { FilterButton, filterItems, times , Carousel, cImg1, cImg2, cImg3} from ".";
 import { useState } from "react";
 const App = () => {
   const [showFilter, setShowFilter] = useState(false);
@@ -20,6 +20,12 @@ const App = () => {
     updatedItems.splice(indexToRemove, 1);
     setItems(updatedItems); 
   };
+
+  const images = [
+    cImg1,
+    cImg2,
+    cImg3,
+  ]
 
   return (
     <main>
@@ -47,6 +53,7 @@ const App = () => {
           ))}
         </ul>
       </div>
+      <Carousel images={images}/>
     </main>
   );
 };

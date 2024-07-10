@@ -23,6 +23,13 @@ import chat from "./assets/icons/message-circle.svg";
 import logout from "./assets/icons/log-out.svg";
 import arrowDown from "./assets/icons/chevron-down.svg";
 import FilterButton from "./components/FilterButton";
+import leftCtrl from "./assets/icons/arrow-left.svg";
+import rightCtrl from "./assets/icons/arrow-right.svg";
+import Carousel from "./components/Carousel";
+import Arrow from "./components/Arrow";
+import cImg1 from "./assets/images/13.jpg";
+import cImg2 from "./assets/images/15.jpg";
+import cImg3 from "./assets/images/1.jpg"
 export const navLinks = [
   "all",
   "pots",
@@ -58,6 +65,13 @@ export {
   arrowDown,
   FilterButton,
   times,
+  leftCtrl,
+  rightCtrl,
+  Carousel,
+  Arrow,
+  cImg1,
+  cImg2,
+  cImg3,
 };
 
 export const menuBaritems = [
