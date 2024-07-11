@@ -11,7 +11,7 @@ import {
 } from "..";
 
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [whilstCount, setWhilstCount] = useState(0);
@@ -56,7 +56,7 @@ const Header = () => {
           <ul>
             {navLinks.map((link, index) => (
               <li key={index} className={index === activeIndex ? "active" : ""}>
-                <NavLink
+                <Link
                   to={link}
                   onClick={(e) => {
                     e.preventDefault();
@@ -68,7 +68,7 @@ const Header = () => {
                     <img src={check} alt="Active" className="checker" />
                   )}
                   {link}
-                </NavLink>
+                </Link>
               </li>
             ))}
           </ul>
