@@ -1,24 +1,30 @@
 import { leftCtrl, rightCtrl } from "..";
-const Arrow = ({ className, previousSlide, nextSlide }) => {
+const Arrow = ({ className, previousSlide, nextSlide, showNext, showPrev }) => {
   return (
     <div className={`${className}`}>
       <div className="holder">
+       
         <img
-          className="carouselController prev"
+          className={`carouselController prev ${showPrev ? 'show' : ''}`}
           onClick={previousSlide}
           src={leftCtrl}
-          alt=""
+          alt="Previous slide"
+          role="button"
+          aria-label="Previous slide"
         />
       </div>
       <div className="holder">
         <img
-          className="carouselController next"
+          className={`carouselController next ${showNext ? 'show': ''}`}
           onClick={nextSlide}
           src={rightCtrl}
-          alt=""
+          alt="Next slide"
+          role="button"
+          aria-label="Next slide"
         />
       </div>
     </div>
   );
 };
+
 export default Arrow;

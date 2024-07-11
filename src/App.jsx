@@ -1,6 +1,6 @@
 import { FilterButton, filterItems, times , Carousel, cImg1, cImg2, cImg3} from ".";
 import { useState } from "react";
-const App = () => {
+const App = ({closeMenu}) => {
   const [showFilter, setShowFilter] = useState(false);
   const [showSort, setShowSort] = useState(false);
 
@@ -28,7 +28,7 @@ const App = () => {
   ]
 
   return (
-    <main>
+    <main onClick={closeMenu}>
       <div className="filterSystem">
         <FilterButton
           label="sort by"

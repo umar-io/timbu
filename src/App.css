@@ -151,6 +151,7 @@ aside.menubar {
   border-radius: 5px;
   border: 1px solid #eaecf0;
   opacity: 0;
+  z-index: 1;
 }
 
 .profileinfo {
@@ -328,8 +329,10 @@ main .filterSystem{
   background-color: #98A2B3;
   position: absolute;
   left: 250px;
+  opacity: 0;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 
