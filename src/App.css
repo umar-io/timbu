@@ -303,7 +303,9 @@ main .filterSystem{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: transform 0.5s
 }
+
 
 .controlContainer{
   width: 100%;
@@ -334,6 +336,34 @@ main .filterSystem{
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: #98A2B3;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #667085;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #ffffff; /* Example active color */
+}
+
 
 
 
