@@ -32,7 +32,7 @@ const Header = () => {
             <img src={profileImg} alt="" />
             <p>Olivia Rhye</p>
           </span>
-          <span onClick={toggleMenu} className="mobilemenu">
+          <span  onClick={() => setIsMenuOpen(!isMenuOpen)} className="mobilemenu">
             <img src={menuBarIcon} alt="" />
           </span>
         </div>
