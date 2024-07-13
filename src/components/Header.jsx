@@ -75,7 +75,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <MenuBar className={isMenuOpen ? "show" : ""} />
+        <MenuBar className={isMenuOpen ? "showmenu" : ""} />
       </header>
     </>
   );
