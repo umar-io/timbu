@@ -522,8 +522,8 @@ main .filterSystem {
     margin: 20px 0px;
     overflow-x: auto;
     white-space: nowrap;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
   }
 
   ul {
