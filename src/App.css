@@ -487,7 +487,6 @@ main .filterSystem {
     align-items: center;
     list-style: none;
     overflow-x: scroll;
-    scrollbar-width: 0;
   }
 
   ul > li {
@@ -502,33 +501,7 @@ main .filterSystem {
     text-transform: capitalize;
     cursor: pointer;
   }
-
-  .carousel {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fcfcfd;
-    padding: 20px;
-  }
-
-  .carousel > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.5s;
-  }
-
-  .controlContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-  }
-
+  
   .holder > .next {
     width: 20px;
     height: 20px;
