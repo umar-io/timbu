@@ -8,7 +8,7 @@ import {
   navLinks,
   check,
   MenuBar,
-  menuBarIcon
+  menuBarIcon,
 } from "..";
 
 import { useState } from "react";
@@ -32,9 +32,6 @@ const Header = () => {
             <img src={profileImg} alt="" />
             <p>Olivia Rhye</p>
           </span>
-          <span  onClick={() => setIsMenuOpen(!isMenuOpen)} className="mobilemenu">
-            <img src={menuBarIcon} alt="" />
-          </span>
         </div>
         <div className="search-area">
           <div className="ss">
@@ -43,7 +40,7 @@ const Header = () => {
           </div>
           <div className="input-group">
             <input type="text" placeholder="Search For Anything" />
-            <img src={search} alt="" className="search_img"/>
+            <img src={search} alt="" className="search_img" />
           </div>
           <span className="whilst">
             <img src={whilst} alt="" />
@@ -75,6 +72,9 @@ const Header = () => {
             ))}
           </ul>
         </nav>
+        <span onClick={() => setIsMenuOpen(!isMenuOpen)} className="mobilemenu">
+          <img src={menuBarIcon} alt="" />
+        </span>
         <MenuBar className={isMenuOpen ? "showmenu" : ""} />
       </header>
     </>

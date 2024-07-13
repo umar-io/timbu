@@ -379,11 +379,11 @@ main .filterSystem {
 .container {
   width: 100%;
   padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
+
 
 /* utility */
 .showmenu {
@@ -420,8 +420,8 @@ main .filterSystem {
   span.mobilemenu {
     display: flex !important;
     position: absolute;
-    top: 0;
-    right: 0px;
+    top: 10px;
+    right: 40px;
   }
 
   .ss {
@@ -526,6 +526,10 @@ main .filterSystem {
     -ms-overflow-style: none !important;
   }
 
+  nav::-webkit-scrollbar {
+    display: none; 
+  }
+
   ul {
     justify-content: flex-start;
   }
@@ -533,5 +537,9 @@ main .filterSystem {
   ul > li {
     width: fit-content;
     margin-right: 10px;
+  }
+
+  aside.menubar {
+    top: 40px;
   }
 }
