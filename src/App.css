@@ -51,15 +51,15 @@ header .top-nav span {
   cursor: pointer;
 }
 
-span.cart{
+span.cart {
   padding-right: 40px;
 }
 
-span.mobilemenu{
+span.mobilemenu {
   display: none !important;
 }
 
-.ss{
+.ss {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,8 +127,9 @@ ul > li {
   width: 150px;
   padding: 10px 30px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   border-radius: 5px;
   position: relative;
   text-transform: capitalize;
@@ -239,8 +240,7 @@ ul.menuLink > li > p {
   font-weight: 400;
 }
 
-
-main{
+main {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -250,7 +250,7 @@ main{
   margin-top: 240px;
 }
 
-main .filterSystem{
+main .filterSystem {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -258,7 +258,7 @@ main .filterSystem{
   gap: 20px;
 }
 
-.filterButton{
+.filterButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,13 +267,13 @@ main .filterSystem{
   border: none;
   outline: none;
   color: #000;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
   font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
 }
 
-.filter{
+.filter {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -286,43 +286,41 @@ main .filterSystem{
   gap: 25px;
 }
 
-.filter ul li{
+.filter ul li {
   width: fit-content;
   padding: 5px;
-  color:#000;
+  color: #000;
   gap: 10px;
 }
 
-.filter ul li span img{
-    width: 20px;
+.filter ul li span img {
+  width: 20px;
 }
 
-.collapseImg{
+.collapseImg {
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
 }
 
-.carousel{
+.carousel {
   position: relative;
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FCFCFD;
-  ;
+  background-color: #fcfcfd;
   padding: 20px;
 }
 
-.carousel > img{
+.carousel > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: transform 0.5s
+  transition: transform 0.5s;
 }
 
-
-.controlContainer{
+.controlContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -330,20 +328,20 @@ main .filterSystem{
   top: 50%;
 }
 
-.holder > .next{
+.holder > .next {
   width: 40px;
   height: 40px;
-  background-color: #98A2B3;
+  background-color: #98a2b3;
   position: absolute;
   right: 250px;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.holder > .prev{
+.holder > .prev {
   width: 40px;
   height: 40px;
-  background-color: #98A2B3;
+  background-color: #98a2b3;
   position: absolute;
   left: 250px;
   opacity: 0;
@@ -361,7 +359,7 @@ main .filterSystem{
   bottom: 30px;
   transform: translateX(-50%);
   z-index: 10;
-  background-color: #98A2B3;
+  background-color: #98a2b3;
   padding: 5px;
   border-radius: 50px;
 }
@@ -379,7 +377,7 @@ main .filterSystem{
   background-color: #ffffff; /* Example active color */
 }
 
-.container{
+.container {
   width: 100%;
   padding: 10px;
   display: flex;
@@ -389,12 +387,12 @@ main .filterSystem{
 }
 
 /* utility */
-.show{
+.show {
   opacity: 1 !important;
   z-index: 1;
 }
 
-.rotate{
+.rotate {
   transform: rotate(180deg);
 }
 
@@ -415,7 +413,7 @@ main .filterSystem{
     display: none;
   }
 
-  span.mobilemenu{
+  span.mobilemenu {
     display: flex !important;
     position: absolute;
     top: 0;
@@ -468,8 +466,8 @@ main .filterSystem{
     text-transform: capitalize;
     cursor: pointer;
   }
-  
-  main{
+
+  main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -479,4 +477,67 @@ main .filterSystem{
     margin-top: 200px;
   }
 
+  nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+  }
+
+  ul > li {
+    background-color: #f2f4f7;
+    width: 250px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfd;
+    padding: 20px;
+  }
+
+  .carousel > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s;
+  }
+
+  .controlContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+  }
+
+  .holder > .next {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+  }
+
+  .holder > .prev {
+    width: 20px;
+    height: 20px;
+    left: 10px;
+  }
 }
