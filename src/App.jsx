@@ -1,9 +1,18 @@
-import { FilterButton, filterItems, times , Carousel, cImg1, cImg2, cImg3} from ".";
+import {
+  FilterButton,
+  filterItems,
+  times,
+  Carousel,
+  cImg1,
+  cImg2,
+  cImg3,
+  Container,
+} from ".";
+
 import { useState } from "react";
-const App = ({closeMenu}) => {
+const App = ({ closeMenu }) => {
   const [showFilter, setShowFilter] = useState(false);
   const [showSort, setShowSort] = useState(false);
-
 
   const toggleFiltersFilter = () => {
     setShowFilter(!showFilter);
@@ -13,19 +22,15 @@ const App = ({closeMenu}) => {
     setShowSort(!showSort);
   };
 
-  const [items, setItems] = useState(filterItems)
+  const [items, setItems] = useState(filterItems);
 
   const removeItem = (indexToRemove) => {
     const updatedItems = [...items];
     updatedItems.splice(indexToRemove, 1);
-    setItems(updatedItems); 
+    setItems(updatedItems);
   };
 
-  const images = [
-    cImg1,
-    cImg2,
-    cImg3,
-  ]
+  const images = [cImg1, cImg2, cImg3];
 
   return (
     <main onClick={closeMenu}>
@@ -41,19 +46,22 @@ const App = ({closeMenu}) => {
           showFilter={showFilter}
         />
       </div>
-      <div className={`filter ${showFilter || showSort ? 'show' : ''}`}>
+      <div className={`filter ${showFilter || showSort ? "show" : ""}`}>
         <ul>
           {filterItems.map((item, index) => (
             <li key={index}>
               {item}{" "}
               <span>
-                <img src={times} alt="" onClick={()=>removeItem(index)} />
+                <img src={times} alt="" onClick={() => removeItem(index)} />
               </span>
             </li>
           ))}
         </ul>
       </div>
-      <Carousel images={images}/>
+      <Carousel images={images} />
+      <Container>
+        <h1>hello world</h1>
+      </Container>
     </main>
   );
 };

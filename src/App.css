@@ -51,6 +51,21 @@ header .top-nav span {
   cursor: pointer;
 }
 
+span.cart{
+  padding-right: 40px;
+}
+
+span.mobilemenu{
+  display: none !important;
+}
+
+.ss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 header .search-area {
   width: 100%;
   display: flex;
@@ -364,8 +379,14 @@ main .filterSystem{
   background-color: #ffffff; /* Example active color */
 }
 
-
-
+.container{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 /* utility */
 .show{

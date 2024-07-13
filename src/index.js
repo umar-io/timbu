@@ -21,15 +21,18 @@ import creditCard from "./assets/icons/credit-card.svg";
 import privacy from "./assets/icons/lock.svg";
 import chat from "./assets/icons/message-circle.svg";
 import logout from "./assets/icons/log-out.svg";
+import menuBarIcon from "./assets/icons/menu.svg"
 import arrowDown from "./assets/icons/chevron-down.svg";
 import FilterButton from "./components/FilterButton";
 import leftCtrl from "./assets/icons/chevron-left.svg";
 import rightCtrl from "./assets/icons/chevron-right.svg";
 import Carousel from "./components/Carousel";
+import Container from "./layouts/Container";
+import Card from "./components/Card";
 import Arrow from "./components/Arrow";
 import cImg1 from "./assets/images/13.jpg";
 import cImg2 from "./assets/images/15.jpg";
-import cImg3 from "./assets/images/1.jpg"
+import cImg3 from "./assets/images/1.jpg";
 export const navLinks = [
   "all",
   "pots",
@@ -72,6 +75,9 @@ export {
   cImg1,
   cImg2,
   cImg3,
+  Container,
+  Card,
+  menuBarIcon
 };
 
 export const menuBaritems = [

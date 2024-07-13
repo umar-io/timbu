@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { HomeLayout, App , Pots} from ".";
 import "./App.css";
+import "./media.css"
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -8,6 +8,7 @@ import {
   navLinks,
   check,
   MenuBar,
+  menuBarIcon
 } from "..";
 
 import { useState } from "react";
@@ -22,10 +23,6 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
   return (
     <>
       <header>
@@ -35,13 +32,18 @@ const Header = () => {
             <img src={profileImg} alt="" />
             <p>Olivia Rhye</p>
           </span>
+          <span onClick={toggleMenu} className="mobilemenu">
+            <img src={menuBarIcon} alt="" />
+          </span>
         </div>
         <div className="search-area">
-          <img src={setting} alt="" />
-          <img src={support} alt="" />
+          <div className="ss">
+            <img src={setting} alt="" />
+            <img src={support} alt="" />
+          </div>
           <div className="input-group">
             <input type="text" placeholder="Search For Anything" />
-            <img src={search} alt="" />
+            <img src={search} alt="" className="search_img"/>
           </div>
           <span className="whilst">
             <img src={whilst} alt="" />
