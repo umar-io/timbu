@@ -538,7 +538,7 @@ main .filterSystem {
     margin-right: 10px;
   }
 
-  .active {
+  li.active {
     width: fit-content;
     background-color: #757575;
     justify-content: center;
