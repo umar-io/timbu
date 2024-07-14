@@ -384,7 +384,6 @@ main .filterSystem {
   grid-template-columns: 1fr 1fr;
 }
 
-
 /* utility */
 .showmenu {
   display: flex !important;
@@ -527,7 +526,7 @@ main .filterSystem {
   }
 
   nav::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
 
   ul {
@@ -537,6 +536,14 @@ main .filterSystem {
   ul > li {
     width: fit-content;
     margin-right: 10px;
+  }
+
+  .active {
+    width: fit-content;
+    background-color: #757575;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
   aside.menubar {
