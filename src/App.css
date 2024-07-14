@@ -547,6 +547,7 @@ main .filterSystem {
   }
 
   aside.menubar {
+    width: 300px;
     top: 40px;
   }
 }
