@@ -59,9 +59,6 @@ const App = ({ closeMenu }) => {
         </ul>
       </div>
       <Carousel images={images} />
-      <Container>
-        <h1>hello world</h1>
-      </Container>
     </main>
   );
 };
